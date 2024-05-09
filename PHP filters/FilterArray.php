@@ -1,14 +1,12 @@
-<?php $var=1000;
-$int_options=array(
-"options"=>array
-(
-"min_range"=>0,
-"max_range"=>256
-)
+<?php $var = 1000;
+$int_options = array(
+    "options" => array(
+        "min_range" => 0,
+        "max_range" => 256
+    )
 );
-if(!filter_var($var,FILTER_VALIDATE_INT,$int_options)){
-echo "Integer is not valid";
+if (!filter_var($var, FILTER_VALIDATE_INT, $int_options)) {
+    echo "Integer is not valid";
 } else {
-echo "Integer is valid";
+    echo "Integer is valid";
 }
-?>
